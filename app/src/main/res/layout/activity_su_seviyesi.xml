@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/statusbar_bg_su_seviye"
+    tools:context=".SuSeviyesi">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/statusbar_bg_su_seviye"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSuSeviyesi"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/circle5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSuSeviye"
+        tools:progress="0" />
+
+    <TextView
+        android:id="@+id/textViewSs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%0"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/progressBarSuSeviyesi"
+        app:layout_constraintEnd_toEndOf="@+id/progressBarSuSeviyesi"
+        app:layout_constraintStart_toStartOf="@+id/progressBarSuSeviyesi"
+        app:layout_constraintTop_toTopOf="@+id/progressBarSuSeviyesi" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Su Seviyesi"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar8" />
+
+    <ImageView
+        android:id="@+id/imageViewSuSeviye"
+        android:layout_width="240dp"
+        android:layout_height="237dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/su100" />
+
+    <ImageView
+        android:id="@+id/imageViewSuUyari"
+        android:layout_width="72dp"
+        android:layout_height="105dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarSuSeviyesi"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSuSeviye"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSuSeviye"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSuSeviye"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/su_uyari" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="navigation_bg">#DFFFFFFF</color>
+    <color name="statusbar_bg_genel">#31a05f</color>
+    <color name="statusbar_bg_hava_nem">#78ADC5</color>
+    <color name="statusbar_bg_toprak_nem">#996600</color>
+    <color name="statusbar_bg_hava_sicaklik">#336699</color>
+    <color name="statusbar_bg_toprak_sicaklik">#b4821e</color>
+    <color name="statusbar_bg_hava_kalite">#669999</color>
+    <color name="statusbar_bg_su_seviye">#00ffff</color>
+    <color name="statusbar_bg_isik">#ffffcc</color>
+    <color name="textColorAlt">#000000</color>
+    <color name="textColorUst">#FFFFFF</color>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHavaNem"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonToprakNem"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHavaSicaklik"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonToprakNem"
+            app:layout_constraintHorizontal_bias="0.19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonHavaNem" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHavaKalite"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toStartOf="@+id/imageButtonToprakNem"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonHavaSicaklik" />
+
+        <ImageButton
+            android:id="@+id/imageButtonIsik"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonHavaKalite" />
+
+        <ImageButton
+            android:id="@+id/imageButtonToprakNem"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonHavaNem"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <ImageButton
+            android:id="@+id/imageButtonToprakSicaklik"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonHavaSicaklik"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonToprakNem" />
+
+        <ImageButton
+            android:id="@+id/imageButtonSuSeviye"
+            android:layout_width="180dp"
+            android:layout_height="160dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/icon_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageButtonHavaNem"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonToprakSicaklik" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="91dp"
+            android:layout_height="93dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonHavaNem"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonHavaNem"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonHavaNem"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonHavaNem"
+            app:layout_constraintVertical_bias="0.268"
+            app:srcCompat="@drawable/nem" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="90dp"
+            android:layout_height="108dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonToprakNem"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonToprakNem"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonToprakNem"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonToprakNem"
+            app:layout_constraintVertical_bias="0.057"
+            app:srcCompat="@drawable/toprak_nemi" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="81dp"
+            android:layout_height="110dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonHavaSicaklik"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonHavaSicaklik"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonHavaSicaklik"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonHavaNem"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/hava_sicakligi" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonHavaKalite"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonHavaKalite"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonHavaKalite"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonHavaSicaklik"
+            app:layout_constraintVertical_bias="0.156"
+            app:srcCompat="@drawable/fan" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="75dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonToprakSicaklik"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonToprakSicaklik"
+            app:layout_constraintHorizontal_bias="0.523"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonToprakSicaklik"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonToprakNem"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/toprak_sicakligi" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="80dp"
+            android:layout_height="118dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonSuSeviye"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonSuSeviye"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonSuSeviye"
+            app:layout_constraintTop_toBottomOf="@+id/imageButtonToprakSicaklik"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/su_seviyesi" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="91dp"
+            android:layout_height="125dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButtonIsik"
+            app:layout_constraintEnd_toEndOf="@+id/imageButtonIsik"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/imageButtonIsik"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonIsik"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/isik" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/navigation_bg"
+        app:menu="@menu/menu_navbar" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

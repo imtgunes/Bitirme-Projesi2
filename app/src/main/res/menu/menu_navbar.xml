@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/genel_item"
+        android:icon="@drawable/icon_genel"
+        android:title="Genel" />
+    <item
+        android:id="@+id/hava_nem_item"
+        android:icon="@drawable/icon_hava_nem"
+        android:title="Hava Nem" />
+    <item
+        android:id="@+id/toprak_nem_item"
+        android:icon="@drawable/icon_nem"
+        android:title="Toprak Nemi" />
+    <item
+        android:id="@+id/hava_sicaklik_item"
+        android:icon="@drawable/icon_hava_sicaklik"
+        android:title="Hava Sıcaklık" />
+    <item
+        android:id="@+id/toprak_sicaklik_item"
+        android:icon="@drawable/icon_toprak_sicaklik"
+        android:title="Toprak Sıcaklık" />
+    <item
+        android:id="@+id/hava_kalite_item"
+        android:icon="@drawable/icon_hava_kalite"
+        android:title="Hava Kalite" />
+    <item
+        android:id="@+id/su_seviye_item"
+        android:icon="@drawable/icon_su_seviye"
+        android:title="Su Seviye" />
+    <item
+        android:id="@+id/isik_degeri_item"
+        android:icon="@drawable/icon_isik"
+        android:title="Işık " />
+</menu>
