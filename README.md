@@ -1,1 +1,1 @@
-
+# Akıllı bitki bakımı
