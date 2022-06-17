@@ -92,14 +92,6 @@ public class HavaKalitesi extends AppCompatActivity {
                         imageViewHavaKalitesi.setImageResource(R.drawable.hava_kalite_orta);
                         imageViewDurum.setImageResource(R.drawable.ic_switch_off);
                     }
-                    else if (Integer.parseInt(value)  > 300 && Integer.parseInt(value)  < 400){
-                        Drawable drawable = imageView.getDrawable();
-                        if (drawable instanceof Animatable) {
-                            ((Animatable) drawable).stop();
-                        }
-                        imageViewHavaKalitesi.setImageResource(R.drawable.hava_kalite_orta);
-                        imageViewDurum.setImageResource(R.drawable.ic_switch_off);
-                    }
                     else if (Integer.parseInt(value)  > 400){
                         Glide.with(HavaKalitesi.this).load(R.drawable.hava_gifi).into(imageView);
                         Drawable drawable = imageView.getDrawable();
