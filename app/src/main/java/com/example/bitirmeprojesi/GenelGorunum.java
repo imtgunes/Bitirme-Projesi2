@@ -58,6 +58,7 @@ public class GenelGorunum extends AppCompatActivity {
         toolbar.setBackgroundColor(Color.parseColor("#31a05f"));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.icon_back);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

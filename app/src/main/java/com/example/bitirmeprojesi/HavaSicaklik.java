@@ -40,6 +40,7 @@ public class HavaSicaklik extends AppCompatActivity {
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.icon_back);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

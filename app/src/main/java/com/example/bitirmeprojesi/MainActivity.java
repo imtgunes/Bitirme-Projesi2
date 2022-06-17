@@ -32,11 +32,14 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         toolbar = findViewById(R.id.toolbar);
 
+        navigationView.setItemIconTintList(null);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,0,0);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView.setItemIconTintList(null);
+
+        toolbar.setNavigationIcon(R.drawable.icon_menu);
+
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

@@ -47,11 +47,10 @@ public class HavaKalitesi extends AppCompatActivity {
 
         imageView.setImageResource(R.drawable.hava);
 
-
-
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.icon_back);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +77,14 @@ public class HavaKalitesi extends AppCompatActivity {
                         imageViewDurum.setImageResource(R.drawable.ic_switch_off);
                     }
                     else if (Integer.parseInt(value)  < 300){
+                        Drawable drawable = imageView.getDrawable();
+                        if (drawable instanceof Animatable) {
+                            ((Animatable) drawable).stop();
+                        }
+                        imageViewHavaKalitesi.setImageResource(R.drawable.hava_kalite_orta);
+                        imageViewDurum.setImageResource(R.drawable.ic_switch_off);
+                    }
+                    else if (Integer.parseInt(value)  > 300 && Integer.parseInt(value)  < 400){
                         Drawable drawable = imageView.getDrawable();
                         if (drawable instanceof Animatable) {
                             ((Animatable) drawable).stop();

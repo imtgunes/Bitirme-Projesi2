@@ -40,8 +40,10 @@ public class IsikDegeri extends AppCompatActivity {
         imageView = findViewById(R.id.imageView2);
 
         toolbar.setTitle("");
+        //toolbar.setNavigationIcon(R.drawable.icon_menu);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.icon_back);
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
